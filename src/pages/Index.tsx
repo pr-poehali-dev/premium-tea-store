@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import ProductDetail from '@/components/ProductDetail';
+import Checkout from '@/components/Checkout';
 
 interface Product {
   id: number;
@@ -29,6 +30,7 @@ const Index = () => {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [showCart, setShowCart] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [showCheckout, setShowCheckout] = useState(false);
 
   const products: Product[] = [
     {
@@ -219,6 +221,20 @@ const Index = () => {
         product={selectedProduct}
         onAddToCart={addToCart}
         onBack={() => setSelectedProduct(null)}
+      />
+    );
+  }
+
+  if (showCheckout) {
+    return (
+      <Checkout
+        cart={cart}
+        onBack={() => setShowCheckout(false)}
+        onOrderComplete={() => {
+          setCart([]);
+          setShowCheckout(false);
+          alert('Заказ успешно оформлен! Мы свяжемся с вами в ближайшее время.');
+        }}
       />
     );
   }
@@ -579,7 +595,10 @@ const Index = () => {
                         {getTotalPrice().toLocaleString()} ₽
                       </span>
                     </div>
-                    <Button className="w-full bg-tea-crimson hover:bg-tea-crimson/90 text-white">
+                    <Button 
+                      onClick={() => setShowCheckout(true)}
+                      className="w-full bg-tea-crimson hover:bg-tea-crimson/90 text-white"
+                    >
                       <Icon name="CreditCard" size={20} className="mr-2" />
                       Оформить заказ
                     </Button>
