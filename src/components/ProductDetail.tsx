@@ -31,16 +31,16 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
   const [quantity, setQuantity] = useState(1);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-tea-cream to-white">
+    <div className="min-h-screen bg-gradient-to-b from-modern-light to-white">
       {/* Навигация */}
-      <nav className="bg-white/80 backdrop-blur-sm border-b border-tea-amber/20 sticky top-0 z-50">
+      <nav className="bg-white/80 backdrop-blur-sm border-b border-modern-accent/20 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
               <Button
                 variant="ghost"
                 onClick={onBack}
-                className="text-tea-charcoal hover:text-tea-crimson"
+                className="text-modern-dark hover:text-modern-primary"
               >
                 <Icon name="ArrowLeft" size={20} className="mr-2" />
                 Назад к каталогу
@@ -48,8 +48,8 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
             </div>
             <div className="flex items-center space-x-2">
               <div className="text-2xl">🫖</div>
-              <span className="text-xl font-bold text-tea-charcoal font-chinese">茶道</span>
-              <span className="text-lg font-semibold text-tea-crimson">TeaWay</span>
+              <span className="text-xl font-bold text-modern-dark font-chinese">茶道</span>
+              <span className="text-lg font-semibold text-modern-primary">TeaWay</span>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
                 alt={product.name}
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-lg"
               />
-              <Badge className="absolute top-4 left-4 bg-tea-crimson text-white">
+              <Badge className="absolute top-4 left-4 bg-modern-primary text-white">
                 {product.category === 'teapot' ? 'Ручная работа' : 'Премиум качество'}
               </Badge>
               
@@ -123,31 +123,31 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
           {/* Информация о товаре */}
           <div className="space-y-6">
             <div>
-              <h1 className="text-3xl font-bold text-tea-charcoal mb-2">
+              <h1 className="text-3xl font-bold text-modern-dark mb-2">
                 {product.name}
               </h1>
-              <p className="text-tea-charcoal/60 font-chinese mb-4">
+              <p className="text-modern-dark/60 font-chinese mb-4">
                 {product.nameEn}
               </p>
-              <p className="text-tea-charcoal/80 text-lg leading-relaxed">
+              <p className="text-modern-dark/80 text-lg leading-relaxed">
                 {product.description}
               </p>
             </div>
 
             {/* Цена и количество */}
-            <Card className="border-tea-amber/20">
+            <Card className="border-modern-accent/20">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-3xl font-bold text-tea-crimson">
+                  <span className="text-3xl font-bold text-modern-primary">
                     {product.price.toLocaleString()} ₽
                   </span>
                   {product.category === 'tea' && (
-                    <span className="text-tea-charcoal/60">за 100г</span>
+                    <span className="text-modern-dark/60">за 100г</span>
                   )}
                 </div>
                 
                 <div className="flex items-center space-x-4 mb-4">
-                  <span className="text-tea-charcoal font-medium">Количество:</span>
+                  <span className="text-modern-dark font-medium">Количество:</span>
                   <div className="flex items-center space-x-2">
                     <Button
                       variant="outline"
@@ -171,14 +171,14 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
 
                 <Button
                   onClick={() => onAddToCart(product)}
-                  className="w-full bg-tea-crimson hover:bg-tea-crimson/90 text-white mb-4"
+                  className="w-full bg-modern-primary hover:bg-modern-primary/90 text-white mb-4"
                   size="lg"
                 >
                   <Icon name="ShoppingCart" size={20} className="mr-2" />
                   Добавить в корзину — {(product.price * quantity).toLocaleString()} ₽
                 </Button>
 
-                <div className="flex items-center justify-center space-x-4 text-sm text-tea-charcoal/60">
+                <div className="flex items-center justify-center space-x-4 text-sm text-modern-dark/60">
                   <div className="flex items-center space-x-1">
                     <Icon name="Shield" size={16} />
                     <span>Гарантия качества</span>
@@ -193,17 +193,17 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
 
             {/* Информация о мастере/происхождении */}
             {product.master && (
-              <Card className="border-tea-amber/20">
+              <Card className="border-modern-accent/20">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-tea-charcoal">
-                    <Icon name="User" size={20} className="mr-2 text-tea-amber" />
+                  <CardTitle className="flex items-center text-modern-dark">
+                    <Icon name="User" size={20} className="mr-2 text-modern-accent" />
                     Мастер-создатель
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <p className="font-semibold text-tea-charcoal">{product.master}</p>
-                    <p className="text-tea-charcoal/60 text-sm">
+                    <p className="font-semibold text-modern-dark">{product.master}</p>
+                    <p className="text-modern-dark/60 text-sm">
                       <Icon name="MapPin" size={16} className="inline mr-1" />
                       {product.origin}
                     </p>
@@ -213,10 +213,10 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
             )}
 
             {/* Особенности */}
-            <Card className="border-tea-amber/20">
+            <Card className="border-modern-accent/20">
               <CardHeader>
-                <CardTitle className="flex items-center text-tea-charcoal">
-                  <Icon name="Star" size={20} className="mr-2 text-tea-amber" />
+                <CardTitle className="flex items-center text-modern-dark">
+                  <Icon name="Star" size={20} className="mr-2 text-modern-accent" />
                   Особенности
                 </CardTitle>
               </CardHeader>
@@ -224,8 +224,8 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
                 <ul className="space-y-2">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-start space-x-2">
-                      <Icon name="Check" size={16} className="text-tea-crimson mt-0.5" />
-                      <span className="text-tea-charcoal/80">{feature}</span>
+                      <Icon name="Check" size={16} className="text-modern-primary mt-0.5" />
+                      <span className="text-modern-dark/80">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -236,12 +236,12 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
 
         {/* Подробное описание */}
         <div className="mt-12">
-          <Card className="border-tea-amber/20">
+          <Card className="border-modern-accent/20">
             <CardHeader>
-              <CardTitle className="text-tea-charcoal">Подробное описание</CardTitle>
+              <CardTitle className="text-modern-dark">Подробное описание</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-tea-charcoal/80 leading-relaxed whitespace-pre-line">
+              <p className="text-modern-dark/80 leading-relaxed whitespace-pre-line">
                 {product.longDescription}
               </p>
             </CardContent>
@@ -250,16 +250,16 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCart, onB
 
         {/* Характеристики */}
         <div className="mt-8">
-          <Card className="border-tea-amber/20">
+          <Card className="border-modern-accent/20">
             <CardHeader>
-              <CardTitle className="text-tea-charcoal">Характеристики</CardTitle>
+              <CardTitle className="text-modern-dark">Характеристики</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-4">
                 {Object.entries(product.specifications).map(([key, value]) => (
-                  <div key={key} className="flex justify-between py-2 border-b border-tea-amber/10 last:border-b-0">
-                    <span className="text-tea-charcoal/60">{key}:</span>
-                    <span className="text-tea-charcoal font-medium">{value}</span>
+                  <div key={key} className="flex justify-between py-2 border-b border-modern-accent/10 last:border-b-0">
+                    <span className="text-modern-dark/60">{key}:</span>
+                    <span className="text-modern-dark font-medium">{value}</span>
                   </div>
                 ))}
               </div>

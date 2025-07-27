@@ -240,30 +240,30 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-tea-cream to-white">
+    <div className="min-h-screen bg-gradient-to-b from-modern-light to-white">
       {/* Навигация */}
-      <nav className="bg-white/80 backdrop-blur-sm border-b border-tea-amber/20 sticky top-0 z-50">
+      <nav className="bg-white/80 backdrop-blur-sm border-b border-modern-accent/20 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <div className="text-2xl">🫖</div>
-              <span className="text-xl font-bold text-tea-charcoal font-chinese">茶道</span>
-              <span className="text-lg font-semibold text-tea-crimson">TeaWay</span>
+              <span className="text-xl font-bold text-modern-dark "></span>
+              <span className="text-lg font-semibold text-modern-primary">TeaWay</span>
             </div>
             <div className="flex items-center space-x-6">
-              <a href="#teapots" className="text-tea-charcoal hover:text-tea-crimson transition-colors">Чайники</a>
-              <a href="#tea" className="text-tea-charcoal hover:text-tea-crimson transition-colors">Чай</a>
-              <a href="#masters" className="text-tea-charcoal hover:text-tea-crimson transition-colors">О традициях</a>
-              <a href="#delivery" className="text-tea-charcoal hover:text-tea-crimson transition-colors">Доставка</a>
-              <a href="#contacts" className="text-tea-charcoal hover:text-tea-crimson transition-colors">Контакты</a>
+              <a href="#teapots" className="text-modern-dark hover:text-modern-primary transition-colors">Чайники</a>
+              <a href="#tea" className="text-modern-dark hover:text-modern-primary transition-colors">Чай</a>
+              <a href="#masters" className="text-modern-dark hover:text-modern-primary transition-colors">О традициях</a>
+              <a href="#delivery" className="text-modern-dark hover:text-modern-primary transition-colors">Доставка</a>
+              <a href="#contacts" className="text-modern-dark hover:text-modern-primary transition-colors">Контакты</a>
               <Button
                 variant="outline"
                 onClick={() => setShowCart(!showCart)}
-                className="relative border-tea-amber text-tea-charcoal hover:bg-tea-amber/10"
+                className="relative border-modern-accent text-modern-dark hover:bg-modern-accent/10"
               >
                 <Icon name="ShoppingCart" size={20} />
                 {getTotalItems() > 0 && (
-                  <Badge className="absolute -top-2 -right-2 bg-tea-crimson text-white text-xs">
+                  <Badge className="absolute -top-2 -right-2 bg-modern-primary text-white text-xs">
                     {getTotalItems()}
                   </Badge>
                 )}
@@ -279,21 +279,21 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
               <div className="space-y-4">
-                <h1 className="text-5xl lg:text-6xl font-bold text-tea-charcoal leading-tight">
+                <h1 className="text-5xl lg:text-6xl font-bold text-modern-dark leading-tight">
                   Премиальные
-                  <span className="block text-tea-crimson font-chinese">茶具</span>
+                  <span className="block text-modern-primary ">茶具</span>
                   <span className="block">чайники</span>
                 </h1>
-                <p className="text-xl text-tea-charcoal/70 max-w-lg">
+                <p className="text-xl text-modern-dark/70 max-w-lg">
                   Аутентичные китайские чайники ручной работы и отборный чай от мастеров с тысячелетними традициями
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-tea-crimson hover:bg-tea-crimson/90 text-white">
+                <Button size="lg" className="bg-modern-primary hover:bg-modern-primary/90 text-white">
                   <Icon name="Star" size={20} className="mr-2" />
                   Смотреть коллекцию
                 </Button>
-                <Button variant="outline" size="lg" className="border-tea-amber text-tea-charcoal hover:bg-tea-amber/10">
+                <Button variant="outline" size="lg" className="border-modern-accent text-modern-dark hover:bg-modern-accent/10">
                   <Icon name="Book" size={20} className="mr-2" />
                   История традиций
                 </Button>
@@ -305,10 +305,10 @@ const Index = () => {
                 alt="Традиционный китайский чайник" 
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border-l-4 border-tea-crimson">
-                <p className="text-sm text-tea-charcoal/60">Мастер</p>
-                <p className="font-semibold text-tea-charcoal">Ли Чжанвэй</p>
-                <p className="text-xs text-tea-amber">30 лет опыта</p>
+              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border-l-4 border-modern-primary">
+                <p className="text-sm text-modern-dark/60">Мастер</p>
+                <p className="font-semibold text-modern-dark">Ли Чжанвэй</p>
+                <p className="text-xs text-modern-accent">30 лет опыта</p>
               </div>
             </div>
           </div>
@@ -319,17 +319,17 @@ const Index = () => {
       <section id="teapots" className="py-16 bg-white/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-tea-charcoal mb-4">
+            <h2 className="text-3xl font-bold text-modern-dark mb-4">
               Коллекция чайников
-              <span className="block text-lg font-normal text-tea-crimson font-chinese">茶壶收藏</span>
+              <span className="block text-lg font-normal text-modern-primary ">茶壶收藏</span>
             </h2>
-            <p className="text-tea-charcoal/70 max-w-2xl mx-auto">
+            <p className="text-modern-dark/70 max-w-2xl mx-auto">
               Каждый чайник создан вручную мастерами из Исина — родины знаменитой пурпурной глины
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.filter(p => p.category === 'teapot').map((product, index) => (
-              <Card key={product.id} className="group hover:shadow-lg transition-all duration-300 animate-fade-in border-tea-amber/20" style={{animationDelay: `${index * 0.1}s`}}>
+              <Card key={product.id} className="group hover:shadow-lg transition-all duration-300 animate-fade-in border-modern-accent/20" style={{animationDelay: `${index * 0.1}s`}}>
                 <CardHeader className="p-0">
                   <div className="relative overflow-hidden rounded-t-lg">
                     <img 
@@ -337,41 +337,41 @@ const Index = () => {
                       alt={product.name}
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <Badge className="absolute top-4 left-4 bg-tea-crimson text-white">
+                    <Badge className="absolute top-4 left-4 bg-modern-primary text-white">
                       Ручная работа
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="text-tea-charcoal mb-2">{product.name}</CardTitle>
-                  <CardDescription className="text-tea-charcoal/60 mb-4">
+                  <CardTitle className="text-modern-dark mb-2">{product.name}</CardTitle>
+                  <CardDescription className="text-modern-dark/60 mb-4">
                     {product.description}
                   </CardDescription>
                   <div className="space-y-2 mb-4">
-                    <p className="text-sm text-tea-amber">
+                    <p className="text-sm text-modern-accent">
                       <Icon name="User" size={16} className="inline mr-2" />
                       Мастер: {product.master}
                     </p>
-                    <p className="text-sm text-tea-charcoal/60">
+                    <p className="text-sm text-modern-dark/60">
                       <Icon name="MapPin" size={16} className="inline mr-2" />
                       {product.origin}
                     </p>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-tea-crimson">
+                    <span className="text-2xl font-bold text-modern-primary">
                       {product.price.toLocaleString()} ₽
                     </span>
                     <div className="flex space-x-2">
                       <Button 
                         variant="outline"
                         onClick={() => setSelectedProduct(product)}
-                        className="border-tea-amber text-tea-charcoal hover:bg-tea-amber/10"
+                        className="border-modern-accent text-modern-dark hover:bg-modern-accent/10"
                       >
                         <Icon name="Eye" size={16} />
                       </Button>
                       <Button 
                         onClick={() => addToCart(product)}
-                        className="bg-tea-amber hover:bg-tea-amber/90 text-white"
+                        className="bg-modern-accent hover:bg-modern-accent/90 text-white"
                       >
                         <Icon name="Plus" size={16} className="mr-2" />
                         В корзину
@@ -389,17 +389,17 @@ const Index = () => {
       <section id="tea" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-tea-charcoal mb-4">
+            <h2 className="text-3xl font-bold text-modern-dark mb-4">
               Премиальный чай
-              <span className="block text-lg font-normal text-tea-crimson font-chinese">优质茶叶</span>
+              <span className="block text-lg font-normal text-modern-primary ">优质茶叶</span>
             </h2>
-            <p className="text-tea-charcoal/70 max-w-2xl mx-auto">
+            <p className="text-modern-dark/70 max-w-2xl mx-auto">
               Отборные чаи из лучших террасов Китая, собранные в идеальное время
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {products.filter(p => p.category === 'tea').map((product, index) => (
-              <Card key={product.id} className="group hover:shadow-lg transition-all duration-300 animate-fade-in border-tea-amber/20" style={{animationDelay: `${index * 0.1}s`}}>
+              <Card key={product.id} className="group hover:shadow-lg transition-all duration-300 animate-fade-in border-modern-accent/20" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="grid md:grid-cols-2">
                   <div className="relative overflow-hidden">
                     <img 
@@ -410,33 +410,33 @@ const Index = () => {
                   </div>
                   <CardContent className="p-6 flex flex-col justify-between">
                     <div>
-                      <CardTitle className="text-tea-charcoal mb-2">{product.name}</CardTitle>
-                      <CardDescription className="text-tea-charcoal/60 mb-4">
+                      <CardTitle className="text-modern-dark mb-2">{product.name}</CardTitle>
+                      <CardDescription className="text-modern-dark/60 mb-4">
                         {product.description}
                       </CardDescription>
-                      <p className="text-sm text-tea-charcoal/60 mb-4">
+                      <p className="text-sm text-modern-dark/60 mb-4">
                         <Icon name="MapPin" size={16} className="inline mr-2" />
                         {product.origin}
                       </p>
                     </div>
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
-                        <span className="text-2xl font-bold text-tea-crimson">
+                        <span className="text-2xl font-bold text-modern-primary">
                           {product.price.toLocaleString()} ₽
                         </span>
-                        <span className="text-sm text-tea-charcoal/60">за 100г</span>
+                        <span className="text-sm text-modern-dark/60">за 100г</span>
                       </div>
                       <div className="flex space-x-2">
                         <Button 
                           variant="outline"
                           onClick={() => setSelectedProduct(product)}
-                          className="border-tea-amber text-tea-charcoal hover:bg-tea-amber/10"
+                          className="border-modern-accent text-modern-dark hover:bg-modern-accent/10"
                         >
                           <Icon name="Eye" size={16} />
                         </Button>
                         <Button 
                           onClick={() => addToCart(product)}
-                          className="flex-1 bg-tea-amber hover:bg-tea-amber/90 text-white"
+                          className="flex-1 bg-modern-accent hover:bg-modern-accent/90 text-white"
                         >
                           <Icon name="Plus" size={16} className="mr-2" />
                           В корзину
@@ -452,13 +452,13 @@ const Index = () => {
       </section>
 
       {/* О мастерах и традициях */}
-      <section id="masters" className="py-16 bg-tea-charcoal text-white">
+      <section id="masters" className="py-16 bg-modern-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h2 className="text-3xl font-bold">
                 Мастера традиций
-                <span className="block text-lg font-normal text-tea-gold font-chinese">传统工艺大师</span>
+                <span className="block text-lg font-normal text-tea-gold ">大师</span>
               </h2>
               <p className="text-white/80 text-lg leading-relaxed">
                 Наши чайники создаются в Исине — легендарном городе керамики, где техники изготовления 
@@ -484,7 +484,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <Button variant="outline" className="border-tea-gold text-tea-gold hover:bg-tea-gold hover:text-tea-charcoal">
+              <Button variant="outline" className="border-tea-gold text-tea-gold hover:bg-tea-gold hover:text-modern-dark">
                 <Icon name="BookOpen" size={20} className="mr-2" />
                 Узнать больше о традициях
               </Button>
@@ -505,51 +505,51 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-tea-charcoal">
+              <h2 className="text-3xl font-bold text-modern-dark">
                 Доставка
-                <span className="block text-lg font-normal text-tea-crimson font-chinese">配送服务</span>
+                <span className="block text-lg font-normal text-modern-primary "></span>
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <Icon name="Truck" size={24} className="text-tea-amber mt-1" />
+                  <Icon name="Truck" size={24} className="text-modern-accent mt-1" />
                   <div>
-                    <h3 className="font-semibold text-tea-charcoal mb-1">По России</h3>
-                    <p className="text-tea-charcoal/70">Бесплатная доставка от 10 000 ₽</p>
+                    <h3 className="font-semibold text-modern-dark mb-1">По России</h3>
+                    <p className="text-modern-dark/70">Бесплатная доставка от 10 000 ₽</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Icon name="Shield" size={24} className="text-tea-amber mt-1" />
+                  <Icon name="Shield" size={24} className="text-modern-accent mt-1" />
                   <div>
-                    <h3 className="font-semibold text-tea-charcoal mb-1">Страхование</h3>
-                    <p className="text-tea-charcoal/70">Все товары застрахованы при доставке</p>
+                    <h3 className="font-semibold text-modern-dark mb-1">Страхование</h3>
+                    <p className="text-modern-dark/70">Все товары застрахованы при доставке</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Icon name="Package" size={24} className="text-tea-amber mt-1" />
+                  <Icon name="Package" size={24} className="text-modern-accent mt-1" />
                   <div>
-                    <h3 className="font-semibold text-tea-charcoal mb-1">Упаковка</h3>
-                    <p className="text-tea-charcoal/70">Премиальная подарочная упаковка</p>
+                    <h3 className="font-semibold text-modern-dark mb-1">Упаковка</h3>
+                    <p className="text-modern-dark/70">Премиальная подарочная упаковка</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="space-y-6" id="contacts">
-              <h2 className="text-3xl font-bold text-tea-charcoal">
+              <h2 className="text-3xl font-bold text-modern-dark">
                 Контакты
-                <span className="block text-lg font-normal text-tea-crimson font-chinese">联系我们</span>
+                <span className="block text-lg font-normal text-modern-primary "></span>
               </h2>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <Icon name="Phone" size={24} className="text-tea-amber" />
-                  <span className="text-tea-charcoal">+7 (495) 123-45-67</span>
+                  <Icon name="Phone" size={24} className="text-modern-accent" />
+                  <span className="text-modern-dark">+7 (495) 123-45-67</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Icon name="Mail" size={24} className="text-tea-amber" />
-                  <span className="text-tea-charcoal">info@teaway.ru</span>
+                  <Icon name="Mail" size={24} className="text-modern-accent" />
+                  <span className="text-modern-dark">info@teaway.ru</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Icon name="Clock" size={24} className="text-tea-amber" />
-                  <span className="text-tea-charcoal">Ежедневно 10:00 — 20:00</span>
+                  <Icon name="Clock" size={24} className="text-modern-accent" />
+                  <span className="text-modern-dark">Ежедневно 10:00 — 20:00</span>
                 </div>
               </div>
             </div>
@@ -562,7 +562,7 @@ const Index = () => {
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
           <Card className="w-full max-w-md max-h-[80vh] overflow-hidden">
             <CardHeader className="flex flex-row items-center justify-between">
-              <CardTitle className="text-tea-charcoal">Корзина</CardTitle>
+              <CardTitle className="text-modern-dark">Корзина</CardTitle>
               <Button
                 variant="ghost"
                 size="sm"
@@ -573,31 +573,31 @@ const Index = () => {
             </CardHeader>
             <CardContent className="overflow-y-auto">
               {cart.length === 0 ? (
-                <p className="text-tea-charcoal/70 text-center py-8">Корзина пуста</p>
+                <p className="text-modern-dark/70 text-center py-8">Корзина пуста</p>
               ) : (
                 <div className="space-y-4">
                   {cart.map(item => (
-                    <div key={item.id} className="flex items-center space-x-4 border-b border-tea-amber/20 pb-4">
+                    <div key={item.id} className="flex items-center space-x-4 border-b border-modern-accent/20 pb-4">
                       <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded" />
                       <div className="flex-1">
-                        <h4 className="font-semibold text-tea-charcoal text-sm">{item.name}</h4>
-                        <p className="text-tea-charcoal/60 text-xs">Количество: {item.quantity}</p>
-                        <p className="text-tea-crimson font-semibold">
+                        <h4 className="font-semibold text-modern-dark text-sm">{item.name}</h4>
+                        <p className="text-modern-dark/60 text-xs">Количество: {item.quantity}</p>
+                        <p className="text-modern-primary font-semibold">
                           {(item.price * item.quantity).toLocaleString()} ₽
                         </p>
                       </div>
                     </div>
                   ))}
-                  <div className="pt-4 border-t border-tea-amber/20">
+                  <div className="pt-4 border-t border-modern-accent/20">
                     <div className="flex justify-between items-center mb-4">
-                      <span className="font-semibold text-tea-charcoal">Итого:</span>
-                      <span className="text-xl font-bold text-tea-crimson">
+                      <span className="font-semibold text-modern-dark">Итого:</span>
+                      <span className="text-xl font-bold text-modern-primary">
                         {getTotalPrice().toLocaleString()} ₽
                       </span>
                     </div>
                     <Button 
                       onClick={() => setShowCheckout(true)}
-                      className="w-full bg-tea-crimson hover:bg-tea-crimson/90 text-white"
+                      className="w-full bg-modern-primary hover:bg-modern-primary/90 text-white"
                     >
                       <Icon name="CreditCard" size={20} className="mr-2" />
                       Оформить заказ
@@ -611,13 +611,13 @@ const Index = () => {
       )}
 
       {/* Футер */}
-      <footer className="bg-tea-charcoal text-white py-12">
+      <footer className="bg-modern-dark text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <span className="text-2xl">🫖</span>
-                <span className="text-xl font-bold font-chinese">茶道</span>
+                <span className="text-xl font-bold "></span>
                 <span className="text-lg font-semibold">TeaWay</span>
               </div>
               <p className="text-white/70">

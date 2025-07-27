@@ -19,8 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Noto Sans', 'system-ui', 'sans-serif'],
-				chinese: ['Noto Sans SC', 'Noto Sans', 'system-ui', 'sans-serif']
+				sans: ['Inter', 'system-ui', 'sans-serif']
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -66,12 +65,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				tea: {
-					crimson: '#991C1C',
-					amber: '#92400E',
-					charcoal: '#1F2937',
-					cream: '#F9FAFB',
-					gold: '#D97706'
+				modern: {
+					primary: '#2563EB',
+					secondary: '#7C3AED',
+					accent: '#059669',
+					dark: '#1E293B',
+					light: '#F8FAFC',
+					muted: '#64748B'
 				}
 			},
 			borderRadius: {
