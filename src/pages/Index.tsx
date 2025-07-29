@@ -579,11 +579,14 @@ const Index = () => {
                 </div>
               </div>
               <Button
+                asChild
                 variant="outline"
                 className="border-tea-gold text-tea-gold hover:bg-tea-gold hover:text-golden-dark"
               >
-                <Icon name="BookOpen" size={20} className="mr-2" />
-                Узнать больше о традициях
+                <Link to="/traditions">
+                  <Icon name="BookOpen" size={20} className="mr-2" />
+                  Узнать больше о традициях
+                </Link>
               </Button>
             </div>
             <div className="relative animate-scale-in">
