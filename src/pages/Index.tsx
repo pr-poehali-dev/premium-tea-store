@@ -326,11 +326,11 @@ const Index = () => {
                   size="sm"
                   className="mb-4 opacity-40"
                 />
-                <h1 className="text-5xl lg:text-6xl font-bold text-golden-dark leading-tight">
+                <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-[#000000]">
                   Премиальные
                   <span className="block">чайники</span>
                 </h1>
-                <p className="text-xl text-golden-dark/70 max-w-lg">
+                <p className="text-xl max-w-lg text-[#000000]">
                   Аутентичные китайские чайники ручной работы и отборный чай от
                   мастеров с тысячелетними традициями
                 </p>
@@ -436,9 +436,7 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-golden-primary">
-                        {product.price.toLocaleString()} ₽
-                      </span>
+                      <span className="text-2xl font-bold text-[#000000]">150 000 ₽</span>
                       <div className="flex space-x-2">
                         <Button
                           variant="outline"
