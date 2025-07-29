@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -343,12 +344,15 @@ const Index = () => {
                   Смотреть коллекцию
                 </Button>
                 <Button
+                  asChild
                   variant="outline"
                   size="lg"
                   className="border-modern-accent text-golden-dark hover:bg-golden-accent/10"
                 >
-                  <Icon name="Book" size={20} className="mr-2" />
-                  История традиций
+                  <Link to="/traditions">
+                    <Icon name="Book" size={20} className="mr-2" />
+                    История традиций
+                  </Link>
                 </Button>
               </div>
             </div>
