@@ -62,16 +62,16 @@ const Traditions = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-golden-light via-white to-golden-light/50">
       {/* Hero секция */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-12 md:py-24 overflow-hidden">
         <ChinesePattern variant="dragon" size="lg" className="absolute top-0 left-0 w-full opacity-5" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <ChinesePattern variant="lotus" size="md" className="mx-auto mb-8 opacity-20" />
-            <h1 className="text-5xl font-bold text-golden-dark mb-4">
+            <ChinesePattern variant="lotus" size="md" className="mx-auto mb-6 md:mb-8 opacity-20" />
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-golden-dark mb-4">
               Традиции чайной церемонии
-              <span className="block text-2xl font-normal text-golden-primary mt-2">中国茶道传统</span>
+              <span className="block text-lg md:text-2xl font-normal text-golden-primary mt-2">中国茶道传统</span>
             </h1>
-            <p className="text-xl text-golden-dark/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-golden-dark/70 max-w-3xl mx-auto leading-relaxed">
               Погрузитесь в древнюю мудрость китайской чайной культуры — искусство, которое объединяет 
               поколения и создает мосты между прошлым и настоящим
             </p>
@@ -80,19 +80,19 @@ const Traditions = () => {
       </section>
 
       {/* Основные разделы традиций */}
-      <section className="py-16">
+      <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-8">
             {traditionSections.map((section, index) => (
               <Card key={section.id} className="group hover:shadow-xl transition-all duration-300 border-golden-accent/20 bg-white/80 backdrop-blur-sm" style={{animationDelay: `${index * 0.1}s`}}>
-                <CardHeader className="pb-4">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="p-3 rounded-full bg-golden-accent/10">
-                      <Icon name={section.icon as any} size={24} className="text-golden-accent" />
+                <CardHeader className="pb-3 md:pb-4 p-4 md:p-6">
+                  <div className="flex items-start md:items-center space-x-3 md:space-x-4 mb-3 md:mb-4">
+                    <div className="p-2 md:p-3 rounded-full bg-golden-accent/10 flex-shrink-0">
+                      <Icon name={section.icon as any} size={20} className="text-golden-accent md:w-6 md:h-6" />
                     </div>
-                    <div>
-                      <CardTitle className="text-golden-dark text-xl">{section.title}</CardTitle>
-                      <CardDescription className="text-golden-primary font-medium">{section.subtitle}</CardDescription>
+                    <div className="min-w-0">
+                      <CardTitle className="text-golden-dark text-lg md:text-xl">{section.title}</CardTitle>
+                      <CardDescription className="text-golden-primary font-medium text-sm md:text-base">{section.subtitle}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>

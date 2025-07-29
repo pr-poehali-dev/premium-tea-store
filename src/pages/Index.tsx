@@ -311,44 +311,44 @@ const Index = () => {
       </nav>
 
       {/* Героическая секция */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-12 md:py-20 overflow-hidden">
         <ChinesePattern
           variant="dragon"
           size="lg"
           className="absolute top-0 left-0 w-full opacity-20"
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-fade-in">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="space-y-6 md:space-y-8 animate-fade-in text-center lg:text-left">
               <div className="space-y-4">
                 <ChinesePattern
                   variant="cloud"
                   size="sm"
-                  className="mb-4 opacity-40"
+                  className="mb-4 opacity-40 mx-auto lg:mx-0"
                 />
-                <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-[#000000]">Чайники ручной работы</h1>
-                <p className="text-xl max-w-lg text-[#000000]">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#000000]">Чайники ручной работы</h1>
+                <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0 text-[#000000]">
                   Аутентичные китайские чайники ручной работы и отборный чай от
                   мастеров с тысячелетними традициями
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
                 <Button
                   size="lg"
-                  className="bg-golden-primary hover:bg-golden-primary/90 text-white"
+                  className="bg-golden-primary hover:bg-golden-primary/90 text-white w-full sm:w-auto"
                 >
-                  <Icon name="Star" size={20} className="mr-2" />
-                  Смотреть коллекцию
+                  <Icon name="Star" size={18} className="mr-2" />
+                  <span className="text-sm md:text-base">Смотреть коллекцию</span>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
                   size="lg"
-                  className="border-modern-accent text-golden-dark hover:bg-golden-accent/10"
+                  className="border-modern-accent text-golden-dark hover:bg-golden-accent/10 w-full sm:w-auto"
                 >
                   <Link to="/traditions">
-                    <Icon name="Book" size={20} className="mr-2" />
-                    История традиций
+                    <Icon name="Book" size={18} className="mr-2" />
+                    <span className="text-sm md:text-base">История традиций</span>
                   </Link>
                 </Button>
               </div>
@@ -370,31 +370,31 @@ const Index = () => {
       </section>
 
       {/* Каталог чайников */}
-      <section id="teapots" className="py-16 bg-white/50 relative">
+      <section id="teapots" className="py-12 md:py-16 bg-white/50 relative">
         <ChinesePattern
           variant="wave"
           size="md"
           className="absolute top-0 left-0 w-full opacity-10"
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <ChinesePattern
               variant="lotus"
               size="sm"
               className="mx-auto mb-4 opacity-30"
             />
-            <h2 className="text-3xl font-bold text-golden-dark mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-golden-dark mb-4">
               Коллекция чайников
-              <span className="block text-lg font-normal text-golden-primary">
+              <span className="block text-base md:text-lg font-normal text-golden-primary">
                 茶壶收藏
               </span>
             </h2>
-            <p className="text-golden-dark/70 max-w-2xl mx-auto">
+            <p className="text-golden-dark/70 max-w-2xl mx-auto text-sm md:text-base">
               Каждый чайник создан вручную мастерами из Исина — родины
               знаменитой пурпурной глины
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {products
               .filter((p) => p.category === "teapot")
               .map((product, index) => (
@@ -408,27 +408,27 @@ const Index = () => {
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <Badge className="absolute top-4 left-4 bg-golden-primary text-white">
+                      <Badge className="absolute top-3 left-3 md:top-4 md:left-4 bg-golden-primary text-white text-xs md:text-sm">
                         Ручная работа
                       </Badge>
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6">
-                    <CardTitle className="text-golden-dark mb-2">
+                  <CardContent className="p-4 md:p-6">
+                    <CardTitle className="text-lg md:text-xl text-golden-dark mb-2">
                       {product.name}
                     </CardTitle>
-                    <CardDescription className="text-golden-dark/60 mb-4">
+                    <CardDescription className="text-golden-dark/60 mb-3 md:mb-4 text-sm md:text-base">
                       {product.description}
                     </CardDescription>
-                    <div className="space-y-2 mb-4">
-                      <p className="text-sm text-golden-accent">
-                        <Icon name="User" size={16} className="inline mr-2" />
+                    <div className="space-y-2 mb-3 md:mb-4">
+                      <p className="text-xs md:text-sm text-golden-accent">
+                        <Icon name="User" size={14} className="inline mr-2" />
                         Мастер: {product.master}
                       </p>
-                      <p className="text-sm text-golden-dark/60">
-                        <Icon name="MapPin" size={16} className="inline mr-2" />
+                      <p className="text-xs md:text-sm text-golden-dark/60">
+                        <Icon name="MapPin" size={14} className="inline mr-2" />
                         {product.origin}
                       </p>
                     </div>
