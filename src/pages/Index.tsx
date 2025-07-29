@@ -557,7 +557,7 @@ const Index = () => {
                 где техники изготовления передаются из поколения в поколение уже
                 более тысячи лет.
               </p>
-             <!-- <div className="space-y-4">
+              <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <Icon name="Award" size={24} className="text-tea-gold mt-1" />
                   <div>
@@ -579,7 +579,6 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              -->
               <Button
                 variant="outline"
                 className="border-tea-gold text-tea-gold hover:bg-tea-gold hover:text-golden-dark"
