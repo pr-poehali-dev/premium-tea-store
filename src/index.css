@@ -97,5 +97,32 @@
 
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(135deg, #fff8dc 0%, #f5e6a3 100%);
+  }
+}
+
+@layer components {
+  .golden-gradient {
+    background: linear-gradient(135deg, #ffd700 0%, #d4af37 50%, #b8860b 100%);
+  }
+
+  .golden-border {
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  }
+
+  .chinese-pattern-bg {
+    background-image:
+      radial-gradient(
+        circle at 25% 25%,
+        rgba(212, 175, 55, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        rgba(255, 215, 0, 0.1) 0%,
+        transparent 50%
+      );
+    background-size: 50px 50px;
   }
 }

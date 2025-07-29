@@ -65,13 +65,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				modern: {
-					primary: '#2563EB',
-					secondary: '#7C3AED',
-					accent: '#059669',
-					dark: '#1E293B',
-					light: '#F8FAFC',
-					muted: '#64748B'
+				golden: {
+					primary: '#D4AF37',
+					secondary: '#B8860B',
+					accent: '#FFD700',
+					dark: '#8B6914',
+					light: '#FFF8DC',
+					muted: '#DAA520',
+					rich: '#B8860B',
+					imperial: '#FFD700',
+					bronze: '#CD7F32'
 				}
 			},
 			borderRadius: {
