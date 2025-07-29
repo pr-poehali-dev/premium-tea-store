@@ -258,7 +258,7 @@ const Index = () => {
               <div className="text-2xl">🫖</div>
               <span className="text-xl font-bold text-golden-dark "></span>
               <span className="text-lg font-semibold text-golden-primary">
-                TeaWay
+                Путь чая
               </span>
             </div>
             <div className="flex items-center space-x-6">
