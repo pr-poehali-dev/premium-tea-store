@@ -326,10 +326,7 @@ const Index = () => {
                   size="sm"
                   className="mb-4 opacity-40"
                 />
-                <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-[#000000]">
-                  Премиальные
-                  <span className="block">чайники</span>
-                </h1>
+                <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-[#000000]">Чайники ручной работы</h1>
                 <p className="text-xl max-w-lg text-[#000000]">
                   Аутентичные китайские чайники ручной работы и отборный чай от
                   мастеров с тысячелетними традициями
