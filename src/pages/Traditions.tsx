@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Icon from '@/components/ui/icon'
-import ChinesePattern from '@/components/ui/chinese-pattern'
+import ChinesePattern from '@/components/ChinesePattern'
 import { Link } from 'react-router-dom'
 
 const Traditions = () => {
