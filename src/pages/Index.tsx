@@ -326,7 +326,9 @@ const Index = () => {
                   size="sm"
                   className="mb-4 opacity-40 mx-auto lg:mx-0"
                 />
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#000000]">Чайники ручной работы</h1>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#000000]">
+                  Чайники ручной работы
+                </h1>
                 <p className="text-lg md:text-xl max-w-lg mx-auto lg:mx-0 text-[#000000]">
                   Аутентичные китайские чайники ручной работы и отборный чай от
                   мастеров с тысячелетними традициями
@@ -338,7 +340,9 @@ const Index = () => {
                   className="bg-golden-primary hover:bg-golden-primary/90 text-white w-full sm:w-auto"
                 >
                   <Icon name="Star" size={18} className="mr-2" />
-                  <span className="text-sm md:text-base">Смотреть коллекцию</span>
+                  <span className="text-sm md:text-base">
+                    Смотреть коллекцию
+                  </span>
                 </Button>
                 <Button
                   asChild
@@ -347,8 +351,10 @@ const Index = () => {
                   className="border-modern-accent text-golden-dark hover:bg-golden-accent/10 w-full sm:w-auto"
                 >
                   <Link to="/traditions">
-                    <Icon name="Book" size={18} className="mr-2" />
-                    <span className="text-sm md:text-base">История традиций</span>
+                    <Icon name="Book" size={14} className="mr-2" />
+                    <span className="text-sm md:text-base">
+                      История традиций
+                    </span>
                   </Link>
                 </Button>
               </div>
@@ -433,7 +439,9 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-[#000000]">150 000 ₽</span>
+                      <span className="text-2xl font-bold text-[#000000]">
+                        150 000 ₽
+                      </span>
                       <div className="flex space-x-2">
                         <Button
                           variant="outline"
@@ -560,7 +568,9 @@ const Index = () => {
                 <div className="flex items-start space-x-4">
                   <Icon name="Award" size={24} className="text-tea-gold mt-1" />
                   <div>
-                    <h3 className="font-semibold mb-1 text-[#000000]">Ли Чжанвэй</h3>
+                    <h3 className="font-semibold mb-1 text-[#000000]">
+                      Ли Чжанвэй
+                    </h3>
                     <p className="text-sm text-[#000000]">
                       30 лет опыта. Специализируется на классических формах
                       династии Мин
@@ -570,7 +580,9 @@ const Index = () => {
                 <div className="flex items-start space-x-4">
                   <Icon name="Award" size={24} className="text-tea-gold mt-1" />
                   <div>
-                    <h3 className="font-semibold mb-1 text-[#000000]">Ван Минхао</h3>
+                    <h3 className="font-semibold mb-1 text-[#000000]">
+                      Ван Минхао
+                    </h3>
                     <p className="text-sm text-[#000000]">
                       Мастер авторских форм, сочетающий традиции с современным
                       дизайном
