@@ -548,13 +548,13 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
-              <h2 className="text-3xl font-bold">
+              <h2 className="text-3xl font-bold text-[#000000]">
                 Мастера традиций
                 <span className="block text-lg font-normal text-tea-gold ">
                   大师
                 </span>
               </h2>
-              <p className="text-white/80 text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed text-[#000000]">
                 Наши чайники создаются в Исине — легендарном городе керамики,
                 где техники изготовления передаются из поколения в поколение уже
                 более тысячи лет.
@@ -563,8 +563,8 @@ const Index = () => {
                 <div className="flex items-start space-x-4">
                   <Icon name="Award" size={24} className="text-tea-gold mt-1" />
                   <div>
-                    <h3 className="font-semibold mb-1">Ли Чжанвэй</h3>
-                    <p className="text-white/70 text-sm">
+                    <h3 className="font-semibold mb-1 text-[#000000]">Ли Чжанвэй</h3>
+                    <p className="text-sm text-[#000000]">
                       30 лет опыта. Специализируется на классических формах
                       династии Мин
                     </p>
@@ -573,8 +573,8 @@ const Index = () => {
                 <div className="flex items-start space-x-4">
                   <Icon name="Award" size={24} className="text-tea-gold mt-1" />
                   <div>
-                    <h3 className="font-semibold mb-1">Ван Минхао</h3>
-                    <p className="text-white/70 text-sm">
+                    <h3 className="font-semibold mb-1 text-[#000000]">Ван Минхао</h3>
+                    <p className="text-sm text-[#000000]">
                       Мастер авторских форм, сочетающий традиции с современным
                       дизайном
                     </p>
@@ -761,51 +761,51 @@ const Index = () => {
                 <span className="text-xl font-bold "></span>
                 <span className="text-lg font-semibold">TeaWay</span>
               </div>
-              <p className="text-white/70">
+              <p className="text-[#000000]">
                 Премиальные китайские чайники и чай с доставкой по России
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Каталог</h3>
+              <h3 className="font-semibold mb-4 text-[#000000]">Каталог</h3>
               <div className="space-y-2">
                 <a
                   href="#teapots"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block hover:text-white transition-colors text-[#000000]"
                 >
                   Чайники
                 </a>
                 <a
                   href="#tea"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block hover:text-white transition-colors text-[#000000]"
                 >
                   Чай
                 </a>
                 <a
                   href="#masters"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block hover:text-white transition-colors text-[#000000]"
                 >
                   О традициях
                 </a>
               </div>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Информация</h3>
+              <h3 className="font-semibold mb-4 text-[#000000]">Информация</h3>
               <div className="space-y-2">
                 <a
                   href="#delivery"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block hover:text-white transition-colors text-[#000000]"
                 >
                   Доставка
                 </a>
                 <a
                   href="#contacts"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block hover:text-white transition-colors text-[#000000]"
                 >
                   Контакты
                 </a>
                 <a
                   href="#"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block hover:text-white transition-colors text-[#000000]"
                 >
                   Гарантия
                 </a>
